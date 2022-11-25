@@ -61,6 +61,7 @@ namespace superhero_social_club
             string superPower = txtSuperpower.Text.Trim();
             string secretIdentity = txtSecretIdentity.Text.Trim();
 
+
             
             // Om input parametrar är null eller empty :
             if(string.IsNullOrEmpty(superHeroName) || string.IsNullOrEmpty(superPower) || string.IsNullOrEmpty(secretIdentity))
@@ -78,6 +79,7 @@ namespace superhero_social_club
                     newSuperhero.SuperheroName = superHeroName;
                     newSuperhero.Superpower = superPower;
                     newSuperhero.SecretIdenty = secretIdentity;
+                    newSuperhero.ImageReference = Guid.NewGuid().ToString();
 
                     // Lägg till heron i databasen.
                     context.Superheroes.Add(newSuperhero);

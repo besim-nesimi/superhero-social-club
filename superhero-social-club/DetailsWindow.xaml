@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:superhero_social_club"
         mc:Ignorable="d"
-        Title="DetailsWindow" Background="BlanchedAlmond" Height="250" Width="340">
+        Title="DetailsWindow" Background="BlanchedAlmond" Height="400" Width="400">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -74,5 +74,8 @@
             x:Name="btnCancel"
             Background="Moccasin" Click="btnCancel_Click"
             />
+        <Image x:Name="imgProfile"
+               Width="100"
+               Height="100" Grid.Column="1" Grid.Row="1"/>
     </Grid>
 </Window>

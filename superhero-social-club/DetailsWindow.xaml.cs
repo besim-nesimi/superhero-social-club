@@ -44,6 +44,11 @@ namespace superhero_social_club
                     txtSuperheroName.Text = this.superhero.SuperheroName;
                     txtSuperpower.Text = this.superhero.Superpower;
                     txtSecretIdentity.Text = this.superhero.SecretIdenty;
+
+
+
+                    // Skriver nedan kod för att få in själva bilden till att synas.
+                    imgProfile.Source = new BitmapImage(new Uri($@"/Images/{this.superhero.ImageReference}.png", UriKind.Relative));
                 }
             }
         }

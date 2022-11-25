@@ -27,6 +27,7 @@ public partial class SuperheroDbContext : DbContext
         {
             entity.HasKey(e => e.SuperheroId).HasName("PK__Superher__05B0D017637B9561");
 
+            entity.Property(e => e.ImageReference).HasMaxLength(100);
             entity.Property(e => e.SecretIdenty).HasMaxLength(50);
             entity.Property(e => e.SuperheroName).HasMaxLength(50);
             entity.Property(e => e.Superpower).HasMaxLength(50);

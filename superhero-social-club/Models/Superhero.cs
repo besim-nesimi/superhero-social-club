@@ -12,4 +12,6 @@ public partial class Superhero
     public string Superpower { get; set; } = null!;
 
     public string SecretIdenty { get; set; } = null!;
+
+    public string? ImageReference { get; set; }
 }
